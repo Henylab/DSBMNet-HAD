@@ -51,7 +51,6 @@ def ResultFunction(x, z):
     residual_np = normalization_max_min(residual ** 2)
     return residual_np
 
-
 def SAD(num_bands, inp, target):
     try:
         input_norm = torch.sqrt(torch.bmm(inp.view(-1, 1, num_bands),
@@ -72,7 +71,6 @@ class load_data(torch.utils.data.Dataset):
         return self.img
     def __len__(self):
         return 1
-
 
 def train():
     net = DSBMNet(Nc, Nr, B, K, R).cuda()
@@ -105,7 +103,6 @@ def train():
            print("Epoch:", epoch,"| Loss: %.4f" % Loss.cpu().data.numpy(),)
            torch.save(net.state_dict(), os.path.join(
                 folder_path, 'epoch_' + str(epoch) + '_' + str(datalabel) + '.pt'))
-
 
 def select_best(Y, M_vca):
     opt_epoch = 0
