@@ -1,5 +1,5 @@
 # DSBMNet-HAD
-Implementation scripts of DSBMNet for hyperspectral anomaly detection. The paper is currently under peer review, and more details will be released soon.
+Implementation scripts of DSBMNet for hyperspectral anomaly detection. The manuscript is currently under peer review, and more details will be released soon.
 
 ## Setup
 
